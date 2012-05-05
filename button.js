@@ -7,9 +7,9 @@ function tiny_plugin() {
  
         init : function(ed, url){
             ed.addButton('tinyplugin', {
-            title : 'Add Small Blue Button',
+            title : 'Add Button',
                 onclick : function() {
-                    ed.selection.setContent('[button link="#" color="default" shape="rounded" size="small" align="left"]Replace This Text[/button]');
+                    ed.selection.setContent('[button link="#" target="_blank" color="default" shape="rounded" size="small" align="left"]Replace This Text[/button]');
                 },
                 image: url + "/button.png"
             });

@@ -3,7 +3,7 @@
 	Plugin Name: Easy Shortcode Buttons
 	Plugin URI: http://alexthorpe.com/coding/easy-buttons-plugin/262/
 	Description: The easiest way to add buttons to your wordpress site. Using the shortcodes you can have CSS3 buttons anywhere on your site
-	Version: 1.0
+	Version: 1.2
 	Author: Alex Thorpe
 	Author URI: http://www.alexthorpe.com/
 	License: GPL2
@@ -40,13 +40,14 @@
 	function bk_button($att, $content = null) {
 		extract(shortcode_atts(array(
 			'link' => '#',
+			'target' => '_blank',
 			'color' => '',
 			'align' => '',
 			'size' => '',
 			'shape' => '',
 		), $att));
 		
-		$my_button = '<span class="bk-button-wrapper"><a href="'.$link.'" target="_blank" class="bk-button '.$color.' '.$align.' '.$shape.' '.$size.'">'.do_shortcode($content).'</a></span>';
+		$my_button = '<span class="bk-button-wrapper"><a href="'.$link.'" target="'.$target.'" class="bk-button '.$color.' '.$align.' '.$shape.' '.$size.'">'.do_shortcode($content).'</a></span>';
 		
 		return $my_button; 
 		

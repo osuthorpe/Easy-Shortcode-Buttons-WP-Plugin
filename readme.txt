@@ -4,7 +4,7 @@ Donate link: http://www.alexthorpe.com/
 Tags: buttons, shortcode, tinymce, CSS3
 Requires at least: 2.0.2
 Tested up to: 3.3
-Stable tag: 1.0
+Stable tag: trunk
 
 Add demo, download and call to action buttons to your site easily with the Easy Buttons Plugin.
 
@@ -25,7 +25,7 @@ Each button is created with only CSS3 making them light weight and easily custom
 
 = Who is this plugin for =
 
-This plugin was designed for people that want to include buttons on there Wordpress site without coding required
+This plugin was designed for people that want to include buttons on there wordpress site without coding required
 
 = Can I make my own buttons =
 
@@ -35,14 +35,24 @@ Yes you can, visit <a href="http://alexthorpe.com/coding/easy-buttons-plugin/262
 
 1. Examples
 2. Visual Editor
-3. Custom Button Settings
+3. Example [button] shortcode
+4. Custom Button Settings
 
 == Changelog ==
 
 = 1.0.0 =
 * Initial release!
 
+= 1.1 =
+*Added support for Internet Explorer and opera
+
 == Upgrade Notice ==
 
 = 1.0 =
 * Initial release
+
+= 1.1 =
+*Added support for Internet Explorer and opera
+
+= 1.2 =
+* Now includes the ability to set what window or frame the button loads
